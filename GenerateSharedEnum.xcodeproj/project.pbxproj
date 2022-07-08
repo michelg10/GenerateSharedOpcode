@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0832F862876BD300003B625 /* GenerateSharedOpcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateSharedOpcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0832F862876BD300003B625 /* GenerateSharedEnum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GenerateSharedEnum; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0832F892876BD300003B625 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		D0832F7D2876BD300003B625 = {
 			isa = PBXGroup;
 			children = (
-				D0832F882876BD300003B625 /* GenerateSharedOpcode */,
+				D0832F882876BD300003B625 /* GenerateSharedEnum */,
 				D0832F872876BD300003B625 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		D0832F872876BD300003B625 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0832F862876BD300003B625 /* GenerateSharedOpcode */,
+				D0832F862876BD300003B625 /* GenerateSharedEnum */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0832F882876BD300003B625 /* GenerateSharedOpcode */ = {
+		D0832F882876BD300003B625 /* GenerateSharedEnum */ = {
 			isa = PBXGroup;
 			children = (
 				D0832F892876BD300003B625 /* main.swift */,
 			);
-			path = GenerateSharedOpcode;
+			path = GenerateSharedEnum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0832F852876BD300003B625 /* GenerateSharedOpcode */ = {
+		D0832F852876BD300003B625 /* GenerateSharedEnum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0832F8D2876BD300003B625 /* Build configuration list for PBXNativeTarget "GenerateSharedOpcode" */;
+			buildConfigurationList = D0832F8D2876BD300003B625 /* Build configuration list for PBXNativeTarget "GenerateSharedEnum" */;
 			buildPhases = (
 				D0832F822876BD300003B625 /* Sources */,
 				D0832F832876BD300003B625 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = GenerateSharedOpcode;
+			name = GenerateSharedEnum;
 			productName = GenerateSharedOpcode;
-			productReference = D0832F862876BD300003B625 /* GenerateSharedOpcode */;
+			productReference = D0832F862876BD300003B625 /* GenerateSharedEnum */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0832F812876BD300003B625 /* Build configuration list for PBXProject "GenerateSharedOpcode" */;
+			buildConfigurationList = D0832F812876BD300003B625 /* Build configuration list for PBXProject "GenerateSharedEnum" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0832F852876BD300003B625 /* GenerateSharedOpcode */,
+				D0832F852876BD300003B625 /* GenerateSharedEnum */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0832F812876BD300003B625 /* Build configuration list for PBXProject "GenerateSharedOpcode" */ = {
+		D0832F812876BD300003B625 /* Build configuration list for PBXProject "GenerateSharedEnum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0832F8B2876BD300003B625 /* Debug */,
@@ -274,7 +274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0832F8D2876BD300003B625 /* Build configuration list for PBXNativeTarget "GenerateSharedOpcode" */ = {
+		D0832F8D2876BD300003B625 /* Build configuration list for PBXNativeTarget "GenerateSharedEnum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0832F8E2876BD300003B625 /* Debug */,

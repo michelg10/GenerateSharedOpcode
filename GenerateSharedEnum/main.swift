@@ -1,5 +1,6 @@
 import Foundation
 enum OpCode: CaseIterable {
+    // GENERAL
     case OP_return
     case OP_true
     case OP_false
@@ -8,20 +9,46 @@ enum OpCode: CaseIterable {
     case OP_loadEmbeddedLongConstant // [8bu value], loads directly the 64-bit value from the next operand
     case OP_loadConstantFromTable // [1bu index], loads constant of `index` from the table
     case OP_LONG_loadConstantFromTable // [3bu index], loads constant of `index` from the table
+    // UNARY OPERATORS
+    case OP_negateInt
+    case OP_negateDouble
+    case OP_notBool
+    // BINARY OPERATORS
+    case OP_greaterInt
+    case OP_greaterDouble
+    case OP_greaterString
+    case OP_greaterOrEqualInt
+    case OP_greaterOrEqualDouble
+    case OP_greaterOrEqualString
+    case OP_lessInt
+    case OP_lessDouble
+    case OP_lessString
+    case OP_lessOrEqualInt
+    case OP_lessOrEqualDouble
+    case OP_lessOrEqualString
+    case OP_equalEqualInt
+    case OP_equalEqualDouble
+    case OP_equalEqualString
+    case OP_equalEqualBool
+    case OP_notEqualInt
+    case OP_notEqualDouble
+    case OP_notEqualString
+    case OP_notEqualBool
+    case OP_minusInt
+    case OP_minusDouble
+    case OP_divideInt
+    case OP_divideDouble
+    case OP_multiplyInt
+    case OP_multiplyDouble
+    case OP_intDivideInt
+    case OP_intDivideDouble
+    case OP_modInt
     case OP_addInt
     case OP_addDouble
     case OP_addString
-    case OP_minusInt
-    case OP_minusDouble
-    case OP_multiplyInt
-    case OP_multiplyDouble
-    case OP_divideInt
-    case OP_divideDouble
-    case OP_intDivideInt
-    case OP_intDivideDouble
-    case OP_negateInt
-    case OP_negateDouble
-    case OP_not
+    // LOGICAL OPERATORS
+    case OP_orBool
+    case OP_andBool
 }
 enum VMType: CaseIterable {
     case Int
