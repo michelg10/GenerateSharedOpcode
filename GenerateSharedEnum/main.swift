@@ -72,11 +72,15 @@ func writeEnumToSwift(filePath: String, name: String, cases: [String]) {
 }
 
 func writeEnumToCpp(filePath: String, name: String, cases: [String]) {
-    var result = "enum \(name) {"
+    var ifdefName = String(filePath[filePath.index(filePath.lastIndex(of: "/")!, offsetBy: 1)...])
+    ifdefName = ifdefName.lowercased()
+    ifdefName = ifdefName.replacingOccurrences(of: ".", with: "_")
+    
+    var result = "#ifndef \(ifdefName)\n#define \(ifdefName)\n\nenum \(name) {"
     for i in 0..<cases.count {
         result+="\n    \(cases[i])=\(i),"
     }
-    result+="\n};"
+    result+="\n};\n\n#endif /* \(ifdefName) */"
     do {
         try result.write(to: .init(fileURLWithPath: filePath), atomically: false, encoding: .utf8)
     } catch {
