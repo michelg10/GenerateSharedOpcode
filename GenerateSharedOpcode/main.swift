@@ -1,10 +1,11 @@
 import Foundation
 enum OpCode: CaseIterable {
-    case OP_loadEmbeddedLongConstant // [8bu value], loads directly the 64-bit value from the next operand
+    case OP_return
     case OP_true
     case OP_false
     case OP_pop
     case OP_pop_n // [1bu count]
+    case OP_loadEmbeddedLongConstant // [8bu value], loads directly the 64-bit value from the next operand
     case OP_loadConstantFromTable // [1bu index], loads constant of `index` from the table
     case OP_LONG_loadConstantFromTable // [3bu index], loads constant of `index` from the table
     case OP_addInt
