@@ -49,6 +49,15 @@ enum OpCode: CaseIterable {
     // LOGICAL OPERATORS
     case OP_orBool
     case OP_andBool
+    // OUTPUT
+    case OP_outputInt
+    case OP_outputDouble
+    case OP_outputBoolean
+    case OP_outputString
+    case OP_outputArray
+    case OP_outputAny
+    case OP_outputClass
+    case OP_outputVoid
 }
 enum VMType: CaseIterable {
     case Int
