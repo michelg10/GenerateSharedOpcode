@@ -6,7 +6,9 @@ enum OpCode: CaseIterable {
     case OP_false
     case OP_pop
     case OP_pop_n // [1bu count]
+    case OP_loadEmbeddedByteConstant // [1bu value], loads directly the 8-bit value from the next operand
     case OP_loadEmbeddedLongConstant // [8bu value], loads directly the 64-bit value from the next operand
+    case OP_loadEmbeddedExplicitlyTypedConstant // [16b value], loads directly the 2-byte value from the next operand
     case OP_loadConstantFromTable // [1bu index], loads constant of `index` from the table
     case OP_LONG_loadConstantFromTable // [3bu index], loads constant of `index` from the table
     // UNARY OPERATORS
