@@ -71,7 +71,7 @@ enum VMType: CaseIterable {
 }
 
 func writeEnumToSwift(filePath: String, name: String, cases: [String]) {
-    var result = "// swiftlint:disable all\nenum \(name): Int {"
+    var result = "// swiftlint:disable all\ninternal enum \(name): Int {"
     for i in cases {
         result+="\n    case \(i)"
     }
